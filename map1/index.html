@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+ <body>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+        <!-- Styling of marker cluster plugin -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.css" />
+        <link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.4.1/dist/MarkerCluster.Default.css" />
+        <!--  -->
+        <title>My test page</title>
+    </head>
+
+    <!-- image element -->
+    <div class="imgbox">
+        <img src="img/landscape.jpg" alt="landscape" class="center-fit">
+    </div>
+    
+    <!-- navigation bar element -->
+    <nav class="navbar">
+        <a href="index.html" class="active">Basic map</a>
+        <a href="choroplethmap.html">Choropleth Map</a>
+        <a href="heatmap.html">Heatmap</a>
+    </nav>
+
+    <!-- title element -->
+    <div>
+    <!-- <div> -->
+        <h1 class="title">Web GIS application</h1>
+    </div>
+
+    <!-- container element -->
+    <div class="container">
+        <button onclick="defaultMapSettings()">Default</button>
+        <!-- map block -->
+        <div id="map" class="map"></div>
+    </div>
+
+    <footer class="footer">© Mirian Valk, Tartu Ülikool 2026</footer>
+ 
+
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+    <!-- script of marker cluster plugin -->
+    <script src="https://unpkg.com/leaflet.markercluster@1.4.1/dist/leaflet.markercluster.js"></script>
+    <!--  -->
+    <script src="js/javascript.js"></script>
+
+  </body>
+
+</html>
